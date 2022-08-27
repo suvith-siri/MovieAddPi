@@ -1,0 +1,22 @@
+{% load static %}
+
+<html>
+<head>
+<title>MovieAdd</title>
+<link rel="stylesheet" type="text/css" href="{% static 'styless.css' %}">
+</head>
+<body>
+<div id="abc">
+    <nav>
+        <ul>
+            <li><a href="accounts/loginn">Sign In</a></li>
+            <li><a href="accounts/signupp">Sign Up</a></li>
+            <li><a href="{% url 'index' %}">Movies Search</a></li>
+            <li><a href="{% url 'playlist' %}">Play List</a></li>
+        </ul>
+        <h1 style="color:white;">MovieAdd</h1>
+    </nav>
+    <img src="https://wallpapers.com/images/featured/avengers-vm16xv4a69smdauy.jpg" alt="Avengers Picture" class="center">
+</div>
+</body>
+</html>

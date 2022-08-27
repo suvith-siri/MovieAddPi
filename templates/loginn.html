@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>MovieAdd</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'locs.css' %}">    
+    <link rel="stylesheet" type="text/css" href="{% static 'styless.css' %}">
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+        <form action="loginn" method="post">  
+            {% csrf_token %}  
+            <label><b>User Name     
+            </b>    
+            </label>    
+            <input type="text" name="username" id="Uname" placeholder="Username">    
+            <br><br>    
+            <label><b>Password     
+            </b>    
+            </label>    
+            <input type="Password" name="password1" id="Pass" placeholder="Password">    
+            <br><br>    
+            <input type="Submit"  id="log" value="Log In Here">       
+            <br><br>    
+                    
+        </form>  
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>  
+</div>    
+</body>    
+</html>     
